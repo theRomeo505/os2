@@ -34,7 +34,7 @@ public class SchedulingAlgorithm {
       //BufferedWriter out = new BufferedWriter(new FileWriter(resultsFile));
       //OutputStream out = new FileOutputStream(resultsFile);
       PrintStream out = new PrintStream(new FileOutputStream(resultsFile));
-      sProcess process = (sProcess) processVector.elementAt(currentProcess); // make process vector a sorted list
+      sProcess process = (sProcess) processVector.elementAt(currentProcess);
       out.println("Process: " + process.cputime + " registered... (" + process.cputime + " " + process.ioblocking + " " + process.cpudone +  ")");
       while (comptime < runtime) {
         ////////// adding new process
